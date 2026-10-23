@@ -28,6 +28,21 @@ sellers, geolocation and category translation (geolocation is not used here).
 MySQL 8, CTEs, window functions, data quality checks
 
 ## Key findings
+### Q3. Average order value by customer state
+![Average order value by state](images/q3_avg_order_value_by_state.png)
+
+1. The overall average order value across all delivered orders is **R$137.04**,
+   based on 96,478 orders generating R$13.22M in revenue.
+2. **Paraíba (PB)** has the highest average order value at **R$217.77** (517 orders),
+   followed by Alagoas (AL) at R$198.63 and Rondônia (RO) at R$187.99.
+3. The largest markets — **São Paulo (SP), Minas Gerais (MG), and Rio de Janeiro (RJ)**
+   — have below-average order values (roughly R$130–143), suggesting customers in
+   these states buy more frequently but in smaller baskets.
+4. Several northern states (AP, AC, RR) show inflated averages due to very small
+   sample sizes (fewer than 100 orders each); these should be interpreted cautiously.
+
+_AOV = SUM(item price) per delivered order, averaged by customer state.
+Freight excluded. Small-sample states flagged._
 
 ### Q1. Monthly revenue and growth
 ![Monthly revenue and MoM growth](images/q1_monthly_revenue.png)
