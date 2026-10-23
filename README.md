@@ -107,5 +107,20 @@ Only delivered orders with non-NULL delivery dates included._
 _Late = order_delivered_customer_date > order_estimated_delivery_date.
 Only delivered orders with valid estimated dates included._
 
+### Q6. Impact of late deliveries on review scores
+![Review score impact](images/q6_review_score_impact.png)
+
+1. Late deliveries cause a catastrophic **-2.02 point drop** in average review scores,
+   falling from **4.29 (On-Time)** to **2.27 (Late)**.
+2. The distribution flips entirely: On-time orders receive **62% five-star reviews**,
+   while late orders receive **54% one-star reviews**. Late delivery is the primary
+   driver of negative feedback.
+3. There is a critical **"tolerance threshold"**: deliveries 1-3 days late maintain
+   a decent **3.29** average, but delays of **4-7 days** cause scores to collapse to **2.10**.
+4. Beyond 8 days late, scores plateau at ~1.7, indicating that once the "cliff" is crossed,
+   further delay adds little additional reputational damage?the customer is already lost.
+
+_Analysis joins orders with order_reviews. Late = delivered after estimated date._
+
 ## Recommendations
 _Coming soon_
