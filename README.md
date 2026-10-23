@@ -89,5 +89,23 @@ Freight excluded. Small-sample states flagged._
 _Delivery time = DATEDIFF(order_delivered_customer_date, order_purchase_timestamp).
 Only delivered orders with non-NULL delivery dates included._
 
+### Q5. Percentage of late deliveries
+![Late delivery percentage](images/q5_pct_late_deliveries.png)
+
+1. Only **6.77%** of delivered orders arrive late (6,534 out of 96,470), but when
+   deliveries are late, customers wait an average of **10.62 extra days**.
+2. **Alagoas (AL)** has the highest late rate at **21.41%**, followed by Maranh?o
+   (MA) at 17.43% ? both Northeast states with underdeveloped logistics. In contrast,
+   S?o Paulo (SP) maintains just **4.49%** late rate despite handling 42% of all orders.
+3. By category, **furniture and mattresses** show the highest late rates (13.51%),
+   while high-volume categories like health/beauty (7.51%) and bed/bath/table (7.43%)
+   perform near the national average, indicating mature logistics for core product lines.
+4. Remote northern states (AM, RO, AP) paradoxically have the *lowest* late rates
+   (2.76?2.99%) despite longest delivery times (Q4), suggesting their delays are
+   predictable and baked into estimates rather than unexpected failures.
+
+_Late = order_delivered_customer_date > order_estimated_delivery_date.
+Only delivered orders with valid estimated dates included._
+
 ## Recommendations
 _Coming soon_
