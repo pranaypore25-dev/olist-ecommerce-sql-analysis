@@ -122,5 +122,23 @@ Only delivered orders with valid estimated dates included._
 
 _Analysis joins orders with order_reviews. Late = delivered after estimated date._
 
+### Q7. Repeat customer rate and retention trends
+![Repeat customer rate](images/q7_repeat_customer_rate.png)
+
+1. Olist operates primarily as an acquisition-driven marketplace: the vast majority
+   of customers are **one-time buyers**, with repeat purchasers representing a small
+   fraction of the base.
+2. Retention follows a clear **cohort maturity pattern**: early 2017 customers show
+   repeat rates of **5?7%**, while late 2018 cohorts drop to **<1%** ? largely because
+   newer customers haven't had sufficient time to repurchase.
+3. Even mature cohorts plateau at ~5-7% repeat rate, indicating structural challenges
+   in building long-term loyalty. This suggests customers view Olist as a transactional
+   platform rather than a destination for recurring needs.
+4. The gap between acquisition volume (6,000+ new customers/month in 2018) and
+   retention highlights a critical growth risk: relying solely on new customer
+   acquisition is unsustainable without improving repeat purchase behavior.
+
+_Repeat = customer with >1 delivered order. Analysis excludes sparse 2016 data._
+
 ## Recommendations
 _Coming soon_
