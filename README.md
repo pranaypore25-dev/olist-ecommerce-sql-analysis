@@ -30,4 +30,16 @@ MySQL 8 · CTEs · window functions · data quality checks
 _Coming soon_
 
 ## Recommendations
-_Coming soon_
+### Q1. Monthly revenue and growth
+![Monthly revenue and MoM growth](images/q1_monthly_revenue.png)
+
+1. Delivered orders generated **R$13.22M** in revenue between Sep 2016 and Aug 2018.
+2. Revenue peaked in **Nov 2017 at R$987,765** (+52.4% vs Oct 2017, Black Friday),
+   with 7,289 orders, the most of any month.
+3. **Jan-Aug 2018 revenue was R$7.22M, about 2.4x the same months of 2017**
+   (R$2.99M), a rise of roughly 141%.
+4. Growth levelled off in 2018: after January, monthly revenue stayed between
+   R$830K and R$980K.
+
+_Note: Sep-Dec 2016 has almost no data and Nov 2016 has no delivered orders, so
+growth percentages for those early months (and Jan 2017) are not meaningful._
