@@ -62,16 +62,32 @@ _Revenue = item price of delivered orders, freight excluded._
 
 1. The overall average order value across all delivered orders is **R$137.04**,
    based on 96,478 orders generating R$13.22M in revenue.
-2. **Paraíba (PB)** has the highest average order value at **R$217.77** (517 orders),
-   followed by Alagoas (AL) at R$198.63 and Rondônia (RO) at R$187.99.
-3. The largest markets — **São Paulo (SP), Minas Gerais (MG), and Rio de Janeiro (RJ)**
-   — have below-average order values (roughly R$130–143), suggesting customers in
+2. **Para?ba (PB)** has the highest average order value at **R$217.77** (517 orders),
+   followed by Alagoas (AL) at R$198.63 and Rond?nia (RO) at R$187.99.
+3. The largest markets ? **S?o Paulo (SP), Minas Gerais (MG), and Rio de Janeiro (RJ)**
+   ? have below-average order values (roughly R$130?143), suggesting customers in
    these states buy more frequently but in smaller baskets.
 4. Several northern states (AP, AC, RR) show inflated averages due to very small
    sample sizes (fewer than 100 orders each); these should be interpreted cautiously.
 
 _AOV = SUM(item price) per delivered order, averaged by customer state.
 Freight excluded. Small-sample states flagged._
+
+### Q4. Average delivery time by customer state
+![Average delivery time by state](images/q4_avg_delivery_time_by_state.png)
+
+1. The national average delivery time is **12.50 days** across 96,470 delivered orders.
+2. **S?o Paulo (SP)** is the fastest state at **8.70 days** average, handling 42% of all
+   delivered orders (40,494). Paran? (PR) and Minas Gerais (MG) follow at ~12 days.
+3. Remote northern states face significantly longer waits: **Roraima (RR)** averages
+   **29.34 days**, Amap? (AP) 27.18 days, and Amazonas (AM) 26.36 days ? roughly
+   3x slower than S?o Paulo.
+4. Extreme outliers exist: several states show maximum delivery times of 170?196 days,
+   suggesting stuck or lost packages that inflate averages. Northern states also have
+   small sample sizes (<150 orders), so their rankings should be interpreted cautiously.
+
+_Delivery time = DATEDIFF(order_delivered_customer_date, order_purchase_timestamp).
+Only delivered orders with non-NULL delivery dates included._
 
 ## Recommendations
 _Coming soon_
