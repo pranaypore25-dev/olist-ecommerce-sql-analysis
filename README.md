@@ -140,5 +140,17 @@ _Analysis joins orders with order_reviews. Late = delivered after estimated date
 
 _Repeat = customer with >1 delivered order. Analysis excludes sparse 2016 data._
 
+### Q8. Seller revenue concentration
+![Seller revenue concentration](images/q8_seller_concentration.png)
+
+1. Revenue is highly concentrated: the **top 10% of sellers (297 of 2,970)
+   generate 67.1%** of delivered revenue (R$13.22M).
+2. **533 sellers (17.9%) account for 80% of revenue**, close to the classic
+   80/20 pattern. The other 2,437 sellers share the last 20%.
+3. The marketplace therefore depends on a small group of sellers: losing even a
+   few top sellers would cut revenue noticeably.
+
+_Only sellers with at least one delivered item are counted (2,970 of 3,095)._
 ## Recommendations
 _Coming soon_
+
