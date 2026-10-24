@@ -153,19 +153,23 @@ The 3.0% headline covers all delivered orders; the cohort figures exclude sparse
 _Only sellers with at least one delivered item are counted (2,970 of 3,095)._
 
 ### Q9. Payment types and installments
-![Payment types and installments](images/q9_payment_types_installments.png),(images/q9a_payment_types.png)
+![Payment types breakdown](images/q9a_payment_types.png)
+![Installment buckets](images/q9_payment_types_installments.png)
 
-1. Larger orders go with more installments: the average order payment rises from
+1. **Credit cards dominate**: 78.5% of payment value comes from credit cards
+   (R$12.1M), followed by boleto (18.0%), voucher (2.2%), and debit card (1.4%).
+2. Larger orders go with more installments: the average order payment rises from
    **R$101 for orders paid in full to R$334 for 7-10 installments**, about 3.3x.
-2. Most credit card orders use few installments: **63.0% use 1-3 installments**,
+3. Most credit card orders use few installments: **63.0% use 1-3 installments**,
    and 15.8% use 7 or more (74,304 delivered orders with a credit card payment).
-3. This is an association only. I did not test whether installments make people
+4. This is an association only. I did not test whether installments make people
    spend more, or whether people with larger baskets choose installments.
 
-_Installment buckets use the highest installment count on the order's credit
-card payments. Order payment is the sum of all payments on the order and
-includes freight, so it is higher than the item-price order value in Q3. The
-11+ bucket has only 329 orders, so its average is not reliable._
+_Payment type analysis includes all delivered orders. Installment buckets use the
+highest installment count on the order's credit card payments. Order payment is
+the sum of all payments on the order and includes freight, so it is higher than
+the item-price order value in Q3. The 11+ bucket has only 329 orders, so its
+average is not reliable._
 
 ### Q10. RFM customer segmentation
 ![RFM customer segmentation](images/q10_rfm_segmentation.png)
