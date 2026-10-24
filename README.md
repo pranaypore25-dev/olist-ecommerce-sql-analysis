@@ -149,8 +149,44 @@ _Repeat = customer with >1 delivered order. Customers are identified by customer
 
 _Only sellers with at least one delivered item are counted (2,970 of 3,095)._
 
+
+### Q9. Payment types and installments
+![Payment types and installments](images/q9_payment_types_installments.png)
+
+1. Larger orders go with more installments: the average order payment rises from
+   **R$101 for orders paid in full to R$334 for 7-10 installments**, about 3.3x.
+2. Most credit card orders use few installments: **63.0% use 1-3 installments**,
+   and 15.8% use 7 or more (74,304 delivered orders with a credit card payment).
+3. This is an association only. I did not test whether installments make people
+   spend more, or whether people with larger baskets choose installments.
+
+_Installment buckets use the highest installment count on the order's credit
+card payments. Order payment is the sum of all payments on the order and
+includes freight, so it is higher than the item-price order value in Q3. The
+11+ bucket has only 329 orders, so its average is not reliable._
+### Q10. RFM customer segmentation
+![RFM customer segmentation](images/q10_rfm_segmentation.png)
+
+1. The 93,358 customers fall into six segments. Two high-spend segments, **recent
+   big spenders (14,479) and lapsed big spenders (13,793)**, are 30.3% of
+   customers but about **58% of revenue** (R$7.69M), at R$267-277 per customer.
+2. **Lapsed big spenders are the largest win-back opportunity:** 13,793
+   customers who spent R$3.82M (28.9% of revenue), whose last order was on
+   average 394 days before the end of the data.
+3. The two low-spend segments make up **47.4% of customers but only 18.6% of
+   revenue**, at about R$55 per customer.
+4. **Repeat buyers** (2,801) are only 3.0% of customers but 5.5% of revenue,
+   spending R$260 each on average, about 1.8x the overall average of R$141.62
+   per customer.
+
+_Customers are identified by customer_unique_id; delivered orders only; spend =
+item price, freight excluded. Recency is measured from the latest delivered
+order in the data. Recency and spend use quintiles (NTILE); frequency is scored
+1/3/5 because 97% of customers ordered once. Segment names are my own grouping
+of these scores._
 ## Recommendations
 _Coming soon_
+
 
 
 
