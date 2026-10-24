@@ -151,7 +151,7 @@ _Only sellers with at least one delivered item are counted (2,970 of 3,095)._
 
 
 ### Q9. Payment types and installments
-![Payment types and installments](images/q9_payment_types_installments.png)
+![Payment types and installments](images/q9_payment_types_installments.png),(images/q9a_payment_types.png)
 
 1. Larger orders go with more installments: the average order payment rises from
    **R$101 for orders paid in full to R$334 for 7-10 installments**, about 3.3x.
