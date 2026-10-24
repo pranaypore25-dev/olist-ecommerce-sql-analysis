@@ -62,10 +62,9 @@ _Revenue = item price of delivered orders, freight excluded._
 
 1. The overall average order value across all delivered orders is **R$137.04**,
    based on 96,478 orders generating R$13.22M in revenue.
-2. **Para?ba (PB)** has the highest average order value at **R$217.77** (517 orders),
-   followed by Alagoas (AL) at R$198.63 and Rond?nia (RO) at R$187.99.
-3. The largest markets ? **S?o Paulo (SP), Minas Gerais (MG), and Rio de Janeiro (RJ)**
-   ? have below-average order values (roughly R$130?143), suggesting customers in
+2. **Paraiba (PB)** has the highest average order value at **R$217.77** (517 orders),
+   followed by Alagoas (AL) at R$198.63 and Rondonia (RO) at R$187.99.
+3. The largest markets - **Sao Paulo (SP), Minas Gerais (MG), and Rio de Janeiro (RJ)** - have below-average order values (roughly R$130-143), suggesting customers in
    these states buy more frequently but in smaller baskets.
 4. Several northern states (AP, AC, RR) show inflated averages due to very small
    sample sizes (fewer than 100 orders each); these should be interpreted cautiously.
@@ -77,12 +76,12 @@ Freight excluded. Small-sample states flagged._
 ![Average delivery time by state](images/q4_avg_delivery_time_by_state.png)
 
 1. The national average delivery time is **12.50 days** across 96,470 delivered orders.
-2. **S?o Paulo (SP)** is the fastest state at **8.70 days** average, handling 42% of all
-   delivered orders (40,494). Paran? (PR) and Minas Gerais (MG) follow at ~12 days.
+2. **Sao Paulo (SP)** is the fastest state at **8.70 days** average, handling 42% of all
+   delivered orders (40,494). Parana (PR) and Minas Gerais (MG) follow at ~12 days.
 3. Remote northern states face significantly longer waits: **Roraima (RR)** averages
-   **29.34 days**, Amap? (AP) 27.18 days, and Amazonas (AM) 26.36 days ? roughly
-   3x slower than S?o Paulo.
-4. Extreme outliers exist: several states show maximum delivery times of 170?196 days,
+   **29.34 days**, Amapa (AP) 27.18 days, and Amazonas (AM) 26.36 days - roughly
+   3x slower than Sao Paulo.
+4. Extreme outliers exist: several states show maximum delivery times of 170-196 days,
    suggesting stuck or lost packages that inflate averages. Northern states also have
    small sample sizes (<150 orders), so their rankings should be interpreted cautiously.
 
@@ -94,14 +93,14 @@ Only delivered orders with non-NULL delivery dates included._
 
 1. Only **6.77%** of delivered orders arrive late (6,534 out of 96,470), but when
    deliveries are late, customers wait an average of **10.62 extra days**.
-2. **Alagoas (AL)** has the highest late rate at **21.41%**, followed by Maranh?o
-   (MA) at 17.43% ? both Northeast states with underdeveloped logistics. In contrast,
-   S?o Paulo (SP) maintains just **4.49%** late rate despite handling 42% of all orders.
+2. **Alagoas (AL)** has the highest late rate at **21.41%**, followed by Maranhao
+   (MA) at 17.43% - both Northeast states with underdeveloped logistics. In contrast,
+   Sao Paulo (SP) maintains just **4.49%** late rate despite handling 42% of all orders.
 3. By category, **furniture and mattresses** show the highest late rates (13.51%),
    while high-volume categories like health/beauty (7.51%) and bed/bath/table (7.43%)
    perform near the national average, indicating mature logistics for core product lines.
 4. Remote northern states (AM, RO, AP) paradoxically have the *lowest* late rates
-   (2.76?2.99%) despite longest delivery times (Q4), suggesting their delays are
+   (2.76-2.99%) despite longest delivery times (Q4), suggesting their delays are
    predictable and baked into estimates rather than unexpected failures.
 
 _Late = order_delivered_customer_date > order_estimated_delivery_date.
@@ -118,18 +117,16 @@ Only delivered orders with valid estimated dates included._
 3. There is a critical **"tolerance threshold"**: deliveries 1-3 days late maintain
    a decent **3.29** average, but delays of **4-7 days** cause scores to collapse to **2.10**.
 4. Beyond 8 days late, scores plateau at ~1.7, indicating that once the "cliff" is crossed,
-   further delay adds little additional reputational damage?the customer is already lost.
+   further delay adds little additional reputational damage - the customer is already lost.
 
 _Analysis joins orders with order_reviews. Late = delivered after estimated date._
 
 ### Q7. Repeat customer rate and retention trends
 ![Repeat customer rate](images/q7_repeat_customer_rate.png)
 
-1. Olist operates primarily as an acquisition-driven marketplace: the vast majority
-   of customers are **one-time buyers**, with repeat purchasers representing a small
-   fraction of the base.
+1. Only **3.0%** of customers (2,801 of 93,358) placed more than one delivered order; the other **97.0%** bought once.
 2. Retention follows a clear **cohort maturity pattern**: early 2017 customers show
-   repeat rates of **5?7%**, while late 2018 cohorts drop to **<1%** ? largely because
+   repeat rates of **5-7%**, while late 2018 cohorts drop to **<1%** - largely because
    newer customers haven't had sufficient time to repurchase.
 3. Even mature cohorts plateau at ~5-7% repeat rate, indicating structural challenges
    in building long-term loyalty. This suggests customers view Olist as a transactional
@@ -138,7 +135,7 @@ _Analysis joins orders with order_reviews. Late = delivered after estimated date
    retention highlights a critical growth risk: relying solely on new customer
    acquisition is unsustainable without improving repeat purchase behavior.
 
-_Repeat = customer with >1 delivered order. Analysis excludes sparse 2016 data._
+_Repeat = customer with >1 delivered order. Customers are identified by customer_unique_id. The 3.0% headline covers all delivered orders; the cohort figures exclude sparse 2016 data._
 
 ### Q8. Seller revenue concentration
 ![Seller revenue concentration](images/q8_seller_concentration.png)
@@ -151,6 +148,9 @@ _Repeat = customer with >1 delivered order. Analysis excludes sparse 2016 data._
    few top sellers would cut revenue noticeably.
 
 _Only sellers with at least one delivered item are counted (2,970 of 3,095)._
+
 ## Recommendations
 _Coming soon_
+
+
 
