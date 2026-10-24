@@ -1,4 +1,4 @@
-# Olist E-commerce SQL Analysis
+| [Olist E-commerce Analysis](https://github.com/pranaypore25-dev/olist-ecommerce-sql-analysis) | How do delivery delays affect reviews and repeat purchases? | MySQL | Completed |
 
 MySQL analysis of ~100K orders from a Brazilian online marketplace (2016-2018).
 
