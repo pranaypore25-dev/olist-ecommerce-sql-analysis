@@ -193,4 +193,50 @@ order in the data. Recency and spend use quintiles (NTILE); frequency is scored
 of these scores._
 
 ## Recommendations
-_Coming soon_
+
+These are proposals based on the findings above. None of them has been tested.
+
+1. **Prioritise delivery reliability where it is weakest.** Late orders score
+   2.27 against 4.29 for on-time ones (Q6), and scores fall sharply once an order
+   is 4-7 days late. Only 6.77% of orders are late (Q5), so the problem is
+   concentrated: Alagoas (21.41%) and Maranhao (17.43%) are the places to start.
+   Reviewing carrier performance and delivery estimates there, and contacting
+   customers early when an order passes its estimate, would target the cases that
+   do the most damage.
+2. **Run a retention programme for the top sellers as a group.** The top 10% of
+   sellers (297) generate 67.1% of revenue and 533 sellers account for 80% (Q8).
+   No single seller holds more than 1.7%, so the exposure is to the group, not to
+   one account. Delivery-performance reviews and account management for these
+   sellers would protect most of the revenue.
+3. **Run a win-back campaign for lapsed big spenders.** 13,793 customers spent
+   R$3.82M (28.9% of revenue) but have not ordered for about 394 days on average
+   (Q10). Test an offer on half of them and keep the other half as a comparison
+   group, so the effect of the campaign can be measured.
+4. **Encourage a second purchase from recent big spenders.** Only 3.0% of
+   customers order more than once (Q7), while 14,479 recent big spenders (average
+   91 days since their order) are still close enough to be reached (Q10). A
+   follow-up message with a relevant offer is cheap to test.
+5. **Plan for peak months.** Revenue peaked in November 2017 (Q1). Because late
+   deliveries are linked to lower reviews (Q6), check whether lateness rose in
+   that month before the next peak.
+6. **Use category differences in basket size.** bed_bath_table has the most
+   orders but about R$110 per order, against about R$212 for watches_gifts (Q2).
+   Bundles or cross-sell offers in high-volume, lower-value categories are worth
+   testing.
+
+## Limitations
+- The data covers Sep 2016 to Aug 2018 only, and the first months are very sparse.
+- Revenue means item price: freight is excluded and there is no cost or margin
+  data, so nothing here measures profit.
+- Findings show associations in historical data, not causes.
+- RFM segment boundaries and names are my own judgment, not an industry standard.
+- Small states (for example RR, AP, AC) have few orders, so their averages are
+  unstable.
+
+## How to run
+1. Download the dataset from Kaggle (link above) and keep the CSV files outside
+   the repository.
+2. Run `sql/01_schema.sql` in MySQL 8 to create the tables.
+3. Edit the file paths in `sql/02_load_data.sql` to match your computer, then run
+   it (local file loading must be enabled).
+4. Run `sql/03_data_quality_checks.sql`, then the question files in order.
